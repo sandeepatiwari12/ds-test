@@ -8,8 +8,8 @@ import { Provider } from "react-redux";
 import store from "./Redux/store";
 
 // theme & theme provider
-import { ThemeProvider } from "@emotion/react";
 import theme from "./theme";
+import { ThemeProvider } from "@emotion/react";
 import GlobalStyle from "./theme/GlobalStyle";
 
 // components

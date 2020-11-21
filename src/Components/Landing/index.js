@@ -14,11 +14,8 @@ export class Landing extends Component {
   }
 
   async componentDidMount() {
-    const { loadList, listObj } = this.props;
-    const { list } = listObj;
-    if (list && list < 1) {
-      loadList();
-    }
+    const { loadList } = this.props;
+    loadList();
   }
 
   render() {
@@ -28,10 +25,7 @@ export class Landing extends Component {
       <Fragment>
         <Card maxWidth='100%' px={20} py={20}>
           <Flex justifyContent='space-around' flexWrap='wrap'>
-            <Box width={[1, 1, 1 / 2]}>
-              {!loading && list && list.length && <List list={list} />}
-            </Box>
-            <Box width={[1, 1, 1 / 4]}>TODO: something here</Box>
+            <Box width={1}>{!loading && <List data={list} />}</Box>
           </Flex>
         </Card>
       </Fragment>
@@ -44,6 +38,6 @@ Landing.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  listObj: state.list,
+  listObj: state.listData,
 });
 export default connect(mapStateToProps, { loadList })(Landing);

@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import list from "./lists";
+import listData from "./lists";
 export default combineReducers({
-  list,
+  listData,
 });

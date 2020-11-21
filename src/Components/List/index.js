@@ -1,13 +1,18 @@
-import React from 'react'
+import React from "react";
+import DataTable from "react-data-table-component";
+import { Card } from "rebass";
 
-function List({list}) {
-    console.log('list ', list)
-    return (
-        <div>
-            TODO: Add lists here
-
-        </div>
-    )
+function List({ data: { attributes, list } }) {
+  return (
+    <Card>
+      <DataTable
+        title='Users List'
+        columns={attributes}
+        data={list}
+        pagination
+      />
+    </Card>
+  );
 }
 
-export default List
+export default List;
