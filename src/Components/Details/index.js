@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Button, Card, Text, Flex } from "rebass";
+import PropTypes from "prop-types";
 
 function Details({ details, goBack }) {
   const attr = [
@@ -43,4 +44,8 @@ function Details({ details, goBack }) {
   );
 }
 
+Details.propTypes = {
+  details: PropTypes.any.isRequired,
+  goBack: PropTypes.func.isRequired,
+};
 export default Details;
