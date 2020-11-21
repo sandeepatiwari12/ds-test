@@ -9,6 +9,13 @@
             "name": "Address",
             "selector": "formatted_address",
             "sortable": true
+        },
+        {
+            "name": "Rating",
+            "selector": "rating",
+            "sortable": true,
+            "right": true
+
         }
     ],
     "list": [

@@ -13,5 +13,27 @@ code {
 .card {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);
   padding: 16px;
+  background-color: #fff;
 }
-// todo add new style here
+.button {
+  cursor: pointer;
+  background: #6979f8;
+}
+
+// for details card style
+.img {
+  border-radius: 50%;
+  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  background: #fff;
+}
+.name {
+  color: dodgerblue;
+}
+.rating {
+  color: red;
+}
+.types {
+  font-weight: 500;
+  color: #0a8e0a;
+}

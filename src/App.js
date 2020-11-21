@@ -1,8 +1,5 @@
 import React, { Fragment } from "react";
 
-// for react router
-import { BrowserRouter as Router, Route } from "react-router-dom";
-
 // for redux store
 import { Provider } from "react-redux";
 import store from "./Redux/store";
@@ -21,12 +18,10 @@ function App() {
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Router>
           <Fragment>
             <Header />
-            <Route exact path='/' component={Landing} />
+            <Landing />
           </Fragment>
-        </Router>
       </ThemeProvider>
     </Provider>
   );
