@@ -72,7 +72,9 @@ const theme = {
   fonts,
   fontWeights,
   lineHeights,
-  fontSizes
+  fontSizes,
 };
 
 export default theme;
+
+// this file just copied and paste from somewhere
