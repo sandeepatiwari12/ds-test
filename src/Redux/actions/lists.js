@@ -7,7 +7,7 @@ export const loadList = () => async (dispatch) => {
     type: LIST_LOAD_REQUEST,
   });
   try {
-    const res = await axios.get(`/assets/data/apartmentData.json`);
+    const res = await axios.get(`/apartmentData.json`);
     dispatch({
       type: LIST_LOADED,
       payload: res.data,
