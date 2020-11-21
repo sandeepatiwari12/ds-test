@@ -1,0 +1,3 @@
+export const LIST_LOAD_REQUEST = "LIST_LOAD_REQUEST";
+export const LIST_LOADED = "LIST_LOADED";
+export const LIST_LOAD_ERROR = "LIST_LOAD_ERROR";
