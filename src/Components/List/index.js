@@ -19,7 +19,7 @@ function List({ data: { attributes, list }, onRowClick }) {
 
 List.propTypes = {
   data: PropTypes.any.isRequired,
-  onRowClick: PropTypes.func.isRequired
+  onRowClick: PropTypes.func
 }
 
 export default List;

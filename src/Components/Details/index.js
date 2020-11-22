@@ -46,6 +46,6 @@ function Details({ details, goBack }) {
 
 Details.propTypes = {
   details: PropTypes.any.isRequired,
-  goBack: PropTypes.func.isRequired,
+  goBack: PropTypes.func,
 };
 export default Details;
